@@ -32,13 +32,13 @@ public class Transaction {
     @Column(nullable = false)
     private long amountCents;
 
-    private enum TransactionType{
+    public enum TransactionType{
         DEPOSIT,
         WITHDRAW,
         TRANSFER
     }
 
-    private enum TransactionStatus{
+    public enum TransactionStatus{
         PENDING,
         COMPLETED,
         FAILED
